@@ -22,7 +22,7 @@
     </context-param>
     <context-param>
         <param-name>webAppRootKey</param-name>
-        <param-value>wed-customer-service.root</param-value>
+        <param-value>wed-es-service.root</param-value>
     </context-param>
     <listener>
         <listener-class>com.dianping.cat.servlet.CatListener</listener-class>

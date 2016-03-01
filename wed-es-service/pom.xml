@@ -38,6 +38,10 @@
             <groupId>com.dianping.cat</groupId>
             <artifactId>cat-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.dianping</groupId>
+            <artifactId>dp-common-util</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
