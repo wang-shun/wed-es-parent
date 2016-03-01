@@ -25,7 +25,7 @@ import java.util.Map;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:config/spring/local/appcontext-*.xml"})
+@ContextConfiguration(locations = {"classpath:config/spring/local/appcontext-wed-es-core.xml"})
 public class WedEsClientTest {
 
     @Resource

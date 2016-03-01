@@ -21,7 +21,7 @@ import java.util.List;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath*:config/spring/local/appcontext-*.xml"})
+@ContextConfiguration(locations = {"classpath*:config/spring/local/appcontext-wed-es-*.xml"})
 public class WedEsIndexTest {
 
     @Resource
