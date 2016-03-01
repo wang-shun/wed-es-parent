@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Spring配置文件的Schema信息 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:client.properties"/>
+
+    <bean id="wedEsTransportClient" class="com.cip.wed.WedEsTransportClient" init-method="init">
+        <property name="esServers" value="${wed-es.servers}"/>
+        <property name="clusterName" value="${cluster.name}"/>
+    </bean>
+
+    <bean id="wedEsClientIndex" class="com.cip.wed.WedEsClientIndex"/>
+    <bean id="wedEsClientGet" class="com.cip.wed.WedEsClientGet"/>
+    <bean id="wedEsClientDelete" class="com.cip.wed.WedEsClientDelete"/>
+    <bean id="wedEsClientUpdate" class="com.cip.wed.WedEsClientUpdate"/>
+    <bean id="wedEsClientBulk" class="com.cip.wed.WedEsClientBulk"/>
+
+</beans>
