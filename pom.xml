@@ -92,6 +92,11 @@
                 <artifactId>lion-client</artifactId>
                 <version>0.5.4</version>
             </dependency>
+            <dependency>
+                <groupId>com.dianping.dpsf</groupId>
+                <artifactId>dpsf-net</artifactId>
+                <version>2.7.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
