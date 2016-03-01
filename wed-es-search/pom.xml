@@ -14,10 +14,6 @@
     <name>wed-es-search</name>
     <packaging>jar</packaging>
 
-    <properties>
-        <env>qa</env>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.cip</groupId>
@@ -38,17 +34,5 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.1-alpha-1</version>
-                <configuration>
-                    <warName>${artifactId}-${env}-${version}</warName>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
