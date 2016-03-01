@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byName" xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+    <bean id="wedEsService" class="com.dianping.dpsf.spring.ServiceRegistry" init-method="init" lazy-init="false">
+        <property name="port" value="${wed-es-service.wedEsService.port}"/>
+        <property name="services">
+            <map>
+                <entry key="http://service.dianping.com/wedEsService/WedEsIndex_1.0.0" value-ref="wedEsIndex" />
+                <entry key="http://service.dianping.com/wedEsService/WedEsSearch_1.0.0" value-ref="wedEsSearch" />
+            </map>
+        </property>
+    </bean>
+
+</beans>

@@ -6,43 +6,43 @@
               class="com.dianping.combiz.misc.ExtendedConsoleAppender">
         <param name="Target" value="System.out" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="[wed-es-core]%d %-5p [%c] %m%n" />
+            <param name="ConversionPattern" value="[wed-es-service]%d %-5p [%c] %m%n" />
         </layout>
     </appender>
 
     <appender name="avatarAppender" class="org.apache.log4j.DailyRollingFileAppender">
         <!-- <param name="Threshold" value="INFO" /> -->
-        <param name="File" value="/data/applogs/wed-es-core/logs/avatar.log" />
+        <param name="File" value="/data/applogs/wed-es-service/logs/avatar.log" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="[wed-es-core]%d %-5p [%c] %m%n" />
+            <param name="ConversionPattern" value="[wed-es-service]%d %-5p [%c] %m%n" />
         </layout>
     </appender>
 
     <appender name="appAppender" class="org.apache.log4j.DailyRollingFileAppender">
         <!-- <param name="Threshold" value="INFO" /> -->
-        <param name="File" value="/data/applogs/wed-es-core/logs/app.log" />
+        <param name="File" value="/data/applogs/wed-es-service/logs/app.log" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="[wed-es-core]%d %-5p [%c] %m%n" />
+            <param name="ConversionPattern" value="[wed-es-service]%d %-5p [%c] %m%n" />
         </layout>
     </appender>
 
     <appender name="ibatisAppender" class="org.apache.log4j.DailyRollingFileAppender">
         <!-- <param name="Threshold" value="INFO" /> -->
-        <param name="File" value="/data/applogs/wed-es-core/logs/ibatis.log" />
+        <param name="File" value="/data/applogs/wed-es-service/logs/ibatis.log" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="[wed-es-core]%d %-5p [%c] %m%n" />
+            <param name="ConversionPattern" value="[wed-es-service]%d %-5p [%c] %m%n" />
         </layout>
     </appender>
 
     <appender name="illegalAccessAppender" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/data/applogs/wed-es-core/logs/illegalAccess.log" />
+        <param name="File" value="/data/applogs/wed-es-service/logs/illegalAccess.log" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="[wed-es-core]%d %-5p [%c] %m%n" />
+            <param name="ConversionPattern" value="[wed-es-service]%d %-5p [%c] %m%n" />
         </layout>
     </appender>
 
     <appender name="HAWK" class="com.dianping.hawk.HawkAppender">
-        <param name="key1" value="wed-es-core" />
+        <param name="key1" value="wed-es-service" />
         <param name="key2" value="web" />
         <param name="cacheTimeMillis" value="10000" />
         <layout class="org.apache.log4j.PatternLayout">
