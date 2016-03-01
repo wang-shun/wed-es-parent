@@ -11,6 +11,8 @@
 
     <artifactId>wed-es-index</artifactId>
     <version>${wed-es.version}</version>
+    <name>wed-es-index</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

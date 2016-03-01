@@ -11,5 +11,6 @@
 
     <artifactId>wed-es-service</artifactId>
     <version>${wed-es.version}</version>
+    <name>wed-es-service</name>
 
 </project>

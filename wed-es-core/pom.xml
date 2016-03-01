@@ -11,6 +11,7 @@
 
     <artifactId>wed-es-core</artifactId>
     <version>${wed-es.version}</version>
+    <name>wed-es-core</name>
     <packaging>jar</packaging>
 
     <dependencies>

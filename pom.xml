@@ -14,6 +14,7 @@
     <artifactId>wed-es-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+    <name>wed-es-parent</name>
     <modules>
         <module>wed-es-index</module>
         <module>wed-es-search</module>

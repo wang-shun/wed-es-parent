@@ -11,6 +11,8 @@
 
     <artifactId>wed-es-api</artifactId>
     <version>${wed-es.version}</version>
+    <name>wed-es-api</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

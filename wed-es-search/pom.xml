@@ -11,6 +11,8 @@
 
     <artifactId>wed-es-search</artifactId>
     <version>${wed-es.version}</version>
+    <name>wed-es-search</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
