@@ -1,6 +1,5 @@
 package com.cip.wed;
 
-import org.elasticsearch.action.ActionRequestBuilder;
 import org.elasticsearch.action.delete.DeleteRequestBuilder;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.slf4j.Logger;

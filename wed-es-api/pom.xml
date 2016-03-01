@@ -12,5 +12,11 @@
     <artifactId>wed-es-api</artifactId>
     <version>${wed-es.version}</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.dianping</groupId>
+            <artifactId>avatar-interface</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

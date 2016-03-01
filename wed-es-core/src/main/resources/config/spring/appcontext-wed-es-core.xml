@@ -20,4 +20,6 @@
     <bean id="wedEsClientUpdate" class="com.cip.wed.WedEsClientUpdate"/>
     <bean id="wedEsClientBulk" class="com.cip.wed.WedEsClientBulk"/>
 
+    <bean id="wedEsClientSearch" class="com.cip.wed.WedEsClientSearch"/>
+
 </beans>

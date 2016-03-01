@@ -5,6 +5,8 @@ import dto.Internal;
 import dto.Wrapper;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,6 +38,8 @@ public class WedEsClientTest {
     private WedEsClientUpdate wedEsClientUpdate;
     @Resource
     private WedEsClientBulk wedEsClientBulk;
+    @Resource
+    private WedEsClientSearch wedEsClientSearch;
 
     @Test
     public void testIndexOneAndGetOne() {
@@ -75,12 +79,21 @@ public class WedEsClientTest {
             put("name", "testUpdate2");
         }});
         List<Boolean> ret = wedEsClientBulk.bulk("indexname-1", "type-1", ids, WedEsClientRequest.OP.INDEX, objects);
-        Assert.assertTrue(ret!=null&&ret.size()==2);
+        Assert.assertTrue(ret != null && ret.size() == 2);
 
         Wrapper get = wedEsClientGet.get("indexname-1", "type-1", "345", Wrapper.class);
         Assert.assertEquals(get.getName(), "testUpdate2");
     }
 
+    @Test
+    public void testSearch_matchall() {
+        String query = "{\n" +
+                "  \"match_all\" : { }\n" +
+                "}";
+        SearchResponse searchResponse = wedEsClientSearch.search("bank", "account", query, null, null, 0, 10);
+        Assert.assertTrue(searchResponse != null);
+
+    }
 
     private Internal oneInternal() {
         Internal internal = new Internal();
